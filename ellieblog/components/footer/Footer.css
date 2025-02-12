@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    height: fit-content;
+    font-weight: 700;
+    font-size: var(--large);
+    gap: 1rem;
+
+    width: 100%;
+    min-height: 3rem;
+  }
+  
+  .footer-content {
+    display: flex;
+  }
+  
+  .footer-additional {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
