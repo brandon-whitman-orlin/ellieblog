@@ -5,6 +5,9 @@ import "./Home.css";
 
 import Header from "../../components/header/Header";
 import HeaderActions from "../../components/headeractions/HeaderActions";
+import CenterDisplay from "../../components/centerdisplay/CenterDisplay";
+import RecentPosts from "../../components/recentposts/RecentPosts";
+import Intro from "../../components/intro/Intro";
 import Footer from "../../components/footer/Footer";
 import Copyright from "../../components/copyright/Copyright";
 
@@ -28,8 +31,10 @@ function Home() {
         ]}
       />
       <main className="main">
-        <h1>Ellie Blog</h1>
-        <h3>Ellie Blog :D</h3>
+        <CenterDisplay>
+          <RecentPosts></RecentPosts>
+          <Intro></Intro>
+        </CenterDisplay>
       </main>
       <Footer
         spacing="Center"
