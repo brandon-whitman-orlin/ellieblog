@@ -1,0 +1,79 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    max-width: 100vw;
+}
+
+.hero .hero-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .imageAttribution {
+    --fontScale: 0.75;
+    font-size: calc(var(--extra-small) * var(--fontScale));
+    color: var(--background);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+    background-color: var(--text);
+    border-top-left-radius: var(--border-radius);
+    text-shadow: 0.25rem 0.25rem 0.25rem hsl(var(--textHue), var(--textSaturation), var(--textLightness));
+}
+
+.hero .hero-content {
+    position: absolute;
+    --text: hsl(var(--backgroundHue), var(--backgroundSaturation), var(--backgroundLightness));
+    color: var(--text);
+    margin-top: 12rem;
+    max-width: 100vw;
+}
+
+.hero .hero-content h1 {
+    --fontScale: 1.3;
+    font-size: calc(var(--extra-extra-extra-extra-large) * var(--fontScale));
+    text-shadow: 0.5rem 0.5rem 0.25rem hsl(var(--textHue), var(--textSaturation), var(--textLightness));
+}
+
+.hero .hero-content h2 {
+    font-size: calc(var(--extra-extra-extra-large) * var(--fontScale));
+    text-shadow: 0.5rem 0.25rem 0.25rem hsl(var(--textHue), var(--textSaturation), var(--textLightness));
+}
+
+@media screen and (max-width: 1000px) {
+    .hero .hero-content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero .hero-image {
+        object-position: var(--backgroundPos);
+    }
+
+    .hero .hero-content {
+        text-align: center;
+    }
+
+    .hero .hero-content h1 {
+        --fontScale: 1;
+    }
+    
+    .hero .hero-content h2 {
+        --fontScale: 0.7;
+        font-size: calc(var(--extra-extra-extra-large) * var(--fontScale));
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .hero-content {
+        text-shadow: 0.25rem 0.25rem 0.25rem hsl(var(--textHue), var(--textSaturation), var(--textLightness));
+    }
+}

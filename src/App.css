@@ -1,0 +1,231 @@
+/*-------------------------*/
+/* DEFAULT STYLING */
+/*-------------------------*/
+:root {
+
+  margin: 0 auto;
+  color-scheme: light dark;
+
+  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --extra-small: calc(clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem) * var(--fontScale));
+  --small: calc(clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem) * var(--fontScale));
+  --medium: calc(clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem) * var(--fontScale));
+  --large: calc(clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem) * var(--fontScale));
+  --extra-large: calc(clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem) * var(--fontScale));
+  --extra-extra-large: calc(clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem) * var(--fontScale));
+  --extra-extra-extra-large: calc(clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem) * var(--fontScale));
+  --extra-extra-extra-extra-large: calc(clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem) * var(--fontScale));
+
+  --fontScale: 1;
+
+  --padding: 1rem;
+  --border-radius: 0.75rem;
+  --icon-size: 1.5rem;
+
+  --grayed: hsl(0, 0%, 50%);
+  
+  --textHue: 235;
+  --textSaturation: 74%;
+  --textLightness: 6%;
+  
+  --backgroundHue: 233;
+  --backgroundSaturation: 80%;
+  --backgroundLightness: 98%;
+  
+  --primaryHue: 236;
+  --primarySaturation: 77%;
+  --primaryLightness: 53%;
+  
+  --secondaryHue: 269;
+  --secondarySaturation: 77%;
+  --secondaryLightness: 74%;
+  
+  --accentHue: 283;
+  --accentSaturation: 77%;
+  --accentLightness: 64%;
+
+  --text: hsl(var(--textHue), var(--textSaturation), var(--textLightness));
+  --background: hsl(var(--backgroundHue), var(--backgroundSaturation), var(--backgroundLightness));
+  --primary: hsl(var(--primaryHue), var(--primarySaturation), var(--primaryLightness));
+  --secondary: hsl(var(--secondaryHue), var(--secondarySaturation), var(--secondaryLightness));
+  --accent: hsl(var(--accentHue), var(--accentSaturation), var(--accentLightness));
+  --selection: hsl(var(--accentHue), var(--accentSaturation), calc(var(--accentLightness) - 5%));
+}
+
+#root {
+  min-height: 100svh;
+  width: 100%;
+  background-color: var(--background);
+  isolation: isolate;
+}
+
+.accentTheme {
+  --text: hsl(var(--backgroundHue), var(--backgroundSaturation), var(--backgroundLightness)); 
+  --background: hsl(var(--accentHue), var(--accentSaturation), var(--accentLightness));
+  --selection: hsl(var(--accentHue), var(--accentSaturation), calc(var(--accentLightness) - 15%));
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+
+  }
+} */
+
+/* :root.theme-light {
+
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+} */
+
+/* :root.theme-dark {
+
+} */
+
+h1 {
+  font-size: var(--extra-extra-extra-extra-large);
+}
+
+h2 {
+  font-size: var(--extra-extra-extra-large);
+}
+
+h3 {
+  font-size: var(--extra-extra-large);
+}
+
+h4 {
+  font-size: var(--extra-large);
+}
+
+h5 {
+  font-size: var(--large);
+}
+
+small {
+  font-size: var(--small);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+svg:not(.default-color) path {
+  fill: var(--customFill, currentColor);
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: var(--medium);
+}
+
+a {
+  border-radius: 100rem;
+}
+
+h3 a, h4 a, h5 a, h6 a, p a {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+h3 a:focus-visible, h4 a:focus-visible, h5 a:focus-visible, h6 a:focus-visible, p a:focus-visible {
+  padding: 0rem 0.4rem;
+}
+
+a, button, .div-button, svg {
+  font-size: inherit;
+  border: transparent;
+  outline: 2px solid transparent;
+
+  text-decoration: none;
+  color: currentColor;
+}
+
+a, button, .div-button {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover, button:hover, .div-button:hover {
+  --text: hsl(var(--accentHue), var(--accentSaturation), var(--accentLightness));
+  cursor: pointer;  
+  color: var(--text);
+}
+
+a:focus-visible, button:focus-visible, .div-button:focus-visible {
+  --text: hsl(var(--backgroundHue), var(--backgroundSaturation), var(--backgroundLightness));
+  --background: hsl(var(--accentHue), var(--accentSaturation), var(--accentLightness));
+  color: var(--text);
+  /* outline: 0.5rem solid var(--background); */
+  /* outline-offset: -1px; */
+  background-color: var(--background) !important;
+}
+
+a.site-name:focus-visible, button.site-name:focus-visible, .div-button.site-name:focus-visible {
+  --background: hsl(var(--accentHue), var(--accentSaturation), var(--accentLightness));
+  outline: 0rem solid var(--background);
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app-container section {
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--grayed);
+  }
+}
