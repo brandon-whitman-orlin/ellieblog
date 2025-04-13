@@ -48,7 +48,7 @@ function Home() {
         {/* https://openverse.org/image/71c2d159-afa4-4050-8f14-0f2e5163f188?q=east+asian+history&p=20 */}
         <Hero img={HeroImage} alt="Hue City, Vietnam" attribution="Gnilenkov Aleksey" objectPos="35%">
           <h1>Ellie's Blog</h1>
-          <h2>Put some cool text here!</h2>
+          <h2>Put some cool text here</h2>
         </Hero>
         <PageSection>
           <h2>Welcome to Ellie's Blog</h2>
