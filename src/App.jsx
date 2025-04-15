@@ -6,7 +6,7 @@ import Contact from "../pages/contact/Contact";
 import Articles from "../pages/articles/Articles";
 import DefaultArticle from "../pages/defaultarticle/DefaultArticle";
 
-import Pagodas from "../articles/pagodas/pagodas";
+import Pensivebodhisattva from "../articles/pensivebodhisattva/pensivebodhisattva";
 
 import "./App.css"; // Ensure global styles are imported
 
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/articles" element={<Articles />} />
         <Route path="/defaultarticle" element={<DefaultArticle />} />
 
-        <Route path="/articles/pagodas" element={<Pagodas />} />
+        <Route path="/articles/pensivebodhisattva" element={<Pensivebodhisattva />} />
       </Routes>
     </div>
   );

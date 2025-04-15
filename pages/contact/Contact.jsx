@@ -42,7 +42,7 @@ function Contact() {
       </header>
       <main className="main">
         {/* https://openverse.org/image/48e4074b-3e24-48af-b9f7-ea4702b74385?q=east+asian+history&p=54 */}
-        <Hero img={HeroImage} alt="Hue City, Vietnam" attribution="Gnilenkov Aleksey" objectPos="45%">
+        <Hero img={HeroImage} alt="Temple in Beijing, China" attribution="Zhang Kaiyv" objectPos="45%">
           <h1>Contact</h1>
           <h2>Get in Touch With Smelly Ellie</h2>
         </Hero>

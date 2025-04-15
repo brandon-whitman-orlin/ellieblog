@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import ThemeMenu from "../../components/themechange/ThemeMenu";
 import Hero from "../../components/hero/Hero";
 
-import HeroImage from "C:\Users\ellie\OneDrive\Documents\GitHub\ellieblog\assets\images\banner.jpg";
+import HeroImage from "../../assets/images/about-hero.jpg";
 
 import PageSection from "../../components/pagesection/PageSection";
 import DisplayGrid from "../../components/displaygrid/DisplayGrid";
@@ -41,7 +41,7 @@ function About() {
       </header>
       <main className="main">
         {/* https://openverse.org/image/c1e8d389-02f2-4afa-af08-639f796593a5?q=east+asian+history&p=115 */}
-        <Hero img={HeroImage} alt="Hue City, Vietnam" attribution="Gnilenkov Aleksey" objectPos="54%">
+        <Hero img={HeroImage} alt="Books and Scholars' Possessions" attribution="Unidentified artist, Metropolitan Museum of Art" objectPos="54%">
           <h1>About Us</h1>
           <h2>Your Ultimate Hub for All Things East Asian History</h2>
         </Hero>

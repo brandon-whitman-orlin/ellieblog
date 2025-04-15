@@ -90,7 +90,7 @@ function Articles() {
       </header>
       <main className="main">
         {/* https://openverse.org/image/18a29b9a-b404-4bdd-8722-83c745895f8e?q=east+asian+history&p=22 */}
-        <Hero img={HeroImage} alt="Hue City, Vietnam" attribution="Gnilenkov Aleksey" objectPos="27%">
+        <Hero img={HeroImage} alt="Seigantoji Temple from Nachikatsuura, Japan" attribution="Francesco Ungaro" objectPos="27%">
           <h1>Articles</h1>
           <h2>The Most Interesting East Asian History Articles on the Web</h2>
         </Hero>
