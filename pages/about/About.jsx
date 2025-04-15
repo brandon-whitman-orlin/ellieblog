@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import ThemeMenu from "../../components/themechange/ThemeMenu";
 import Hero from "../../components/hero/Hero";
 
-import HeroImage from "../../assets/images/about-hero.jpg";
+import HeroImage from "C:\Users\ellie\OneDrive\Documents\GitHub\ellieblog\assets\images\banner.jpg";
 
 import PageSection from "../../components/pagesection/PageSection";
 import DisplayGrid from "../../components/displaygrid/DisplayGrid";
